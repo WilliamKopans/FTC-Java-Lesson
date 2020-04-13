@@ -1,23 +1,24 @@
-package com.kopans;
-//import java.util.Scanner;
+import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
 
 
-        System.out.print("Enter word: ");
-        String origString = "RaCecar".toLowerCase();
-        String input = origString;
+        Scanner myObj = new Scanner(System.in);  // Create a Scanner object
+        System.out.println("Enter word:");
+        String origString = myObj.nextLine();  // Read user input
+        
+        
+        String input = origString.toLowerCase();
 
-        System.out.println(origString);
 
         int length = input.length();
         boolean isPalindrome = true;
 
         for(int beginIndex = 0; beginIndex < length; beginIndex++)
         {
-            if(origString.charAt(beginIndex) != origString.charAt(length-1-beginIndex)) {
+            if(input.charAt(beginIndex) != input.charAt(length-1-beginIndex)) {
                 System.out.println("String is not a palindrome.");
                 isPalindrome = false;
                 break;
@@ -25,9 +26,26 @@ public class Main {
         }
 
         if(isPalindrome) {
-            System.out.println("String is a palindrome.");
+            System.out.println(origString+ " is a palindrome.");
         }
-    }
 
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }}
