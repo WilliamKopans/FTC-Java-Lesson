@@ -1,8 +1,19 @@
 class Main {
     public static void main(String[] args) {
-        System.out.println(count_Vowels("We love Java"));
+      String Sentance = "Many different words have vowels".toLowerCase();
+
+        String[] splt = Sentance.split(" "); 
+  
+        for (String word : splt) {
+            System.out.println(word);
+            System.out.println(countVowels(word));
+            }
+
     }
-public static int count_Vowels(String str)
+
+
+
+public static int countVowels(String str)
     {
         int count = 0;
         for (int i = 0; i < str.length(); i++)
