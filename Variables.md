@@ -6,11 +6,11 @@ Here are a few variable types (with examples) to get you started:
 
 ```
 int myAge = 30; //an integer
-long phoneNumber = 4014218100L;   // `L` makes sure that Java knows it is a Long not Int
-```
 
-```
+long phoneNumber = 4014218100L;   // `L` makes sure that Java knows it is a Long not Int
+
 long phoneNumber = 401_4218_100L; // Identical to the first, with visual breaks
+
 float price = 10.99f;  // `f` tells Java that `price` is a float not double (less precise than double)
 ```
 
@@ -18,10 +18,9 @@ both of these suffixes (the L and f) specify to Java that it should not choose t
 
 ```
 char letter = 'A'; //Single character
-```
 
-```
 String street = "Hope St.";
+
 boolean isEligible = true; //Booleans can be either True or False
 ```
 
