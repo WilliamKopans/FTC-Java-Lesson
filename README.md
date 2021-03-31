@@ -1,2 +1,2 @@
 # FTC-Java-Lesson
-Assignment answer for my robotics team. 
+Assignment directions and selected answers for my robotics team learning basic Java syntax. 
